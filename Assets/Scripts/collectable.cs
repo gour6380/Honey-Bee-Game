@@ -6,7 +6,7 @@ public class collectable : MonoBehaviour {
 
 	// Use this for initialization
 	float x,y,x1,y1;
-	int score;
+	public int score;
 	public Text lolipops;
 	public GameObject pot,bee,b1,b2,b3;
 	void Start () {
@@ -28,17 +28,14 @@ public class collectable : MonoBehaviour {
 			transform.position=new Vector3(x,y,-1);
 			score++;
 			bee.transform.localScale= new Vector3 (bee.transform.localScale.x+0.02f,bee.transform.localScale.y+0.02f,1);
-			lolipops.text = "x"+score;
-			Debug.Log (score);
+			lolipops.text = ""+score;
+			//Debug.Log (score);
 			if(score%3==0){
 				x1=Random.Range(-2.5f,2);
 				y1=Random.Range (-4.8f,4.5f);
-			
 				pot.SetActive (true);
 				pot.transform.position=new Vector3(x1,y1,-1);
-
 			}
-
 			else{
 				pot.SetActive (false);
 			}

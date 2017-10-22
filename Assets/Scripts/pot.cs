@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class pot : MonoBehaviour {
-	int potno;
+	public int potno;
 	public Text pots;
 	// Use this for initialization
 	void Start () {
@@ -17,7 +17,7 @@ public class pot : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll){
 		if(coll.gameObject.tag=="Player"){
 			potno++;
-			pots.text="x"+potno;
+			pots.text=""+potno;
 			gameObject.SetActive(false);
 		}
 	}

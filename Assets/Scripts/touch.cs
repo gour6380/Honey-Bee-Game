@@ -17,7 +17,7 @@ public class touch : MonoBehaviour {
 		{
 		Touch t =  Input.GetTouch(0);
 		fingerPos=t.position;
-		Debug.Log("abc"+fingerPos);
+		//Debug.Log("abc"+fingerPos);
 		pos = fingerPos;
 		pos.z = 8;
 		realWorldPos = Camera.main.ScreenToWorldPoint(pos);
