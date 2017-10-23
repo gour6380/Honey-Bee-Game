@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class testinganim : MonoBehaviour {
-
-	public Animation anim;
+	bool check=false;
+	public Animator HeadingAnim, TapToPlayAnim;
+	public GameObject TapToPlay;
 	// Use this for initialization
 	void Start () {
-		anim=GetComponent<Animation>();
+		HeadingAnim=GetComponent<Animator>();
+		TapToPlayAnim=TapToPlay.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -16,7 +18,17 @@ public class testinganim : MonoBehaviour {
 	}
 	 
 	public void pressed(){
-		anim.Play ();
-
-	}
+		Debug.Log(check);
+		if(!check)
+		{
+			HeadingAnim.SetBool("escape", true);
+			TapToPlayAnim.SetBool ("escape", true);
+			check=true;
+		}
+		else 
+		{
+			HeadingAnim.SetBool("escape", false);
+			TapToPlayAnim.SetBool ("escape", false);
+			check=false;
+	}}
 }

@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/half done.unity
-    guid: c80261c98cb0ca24ca235354d1bf1193
-  - enabled: 0
-    path: Assets/ist page.unity
-    guid: cc5aaedb8f5dc0941a3d9187ca2f6773
-  - enabled: 0
-    path: Assets/half done.unity
+    path: Assets/Scenes/half done.unity
     guid: c80261c98cb0ca24ca235354d1bf1193
   - enabled: 1
-    path: Assets/UI Trail.unity
+    path: Assets/Scenes/ist page.unity
+    guid: cc5aaedb8f5dc0941a3d9187ca2f6773
+  - enabled: 0
+    path: Assets/Scenes/half done.unity
+    guid: c80261c98cb0ca24ca235354d1bf1193
+  - enabled: 0
+    path: Assets/Scenes/UI Trail.unity
     guid: d67816127e53cc24bb36d95258868857
